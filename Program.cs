@@ -24,6 +24,8 @@ public class Program
         DeleteIfExists(file);
 
         using var package = new ExcelPackage(file);
+
+        var ws = package.Workbook.Worksheets.Add("MainReport");
     }
 
     private static void DeleteIfExists(FileInfo file)
