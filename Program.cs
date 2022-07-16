@@ -19,13 +19,18 @@ public class Program
         await SaveExcelFile(people, file);
     }
 
-    private static Task SaveExcelFile(List<PersonModel> people, FileInfo file)
+    private static async Task SaveExcelFile(List<PersonModel> people, FileInfo file)
     {
         DeleteIfExists(file);
 
         using var package = new ExcelPackage(file);
 
         var ws = package.Workbook.Worksheets.Add("MainReport");
+        
+        var range = ws.Cells["A1"].LoadFromCollection<PersonModel>(people, true);
+        range.AutoFitColumns();
+
+        await package.SaveAsync();
     }
 
     private static void DeleteIfExists(FileInfo file)
