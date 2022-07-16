@@ -14,4 +14,16 @@ public class Program
 
         var file = new FileInfo(Path.Combine(SpecialFolder.Desktop + "ExcelSucks.xlsx"));
     }
+
+    static List<PersonModel> GetSetupData()
+    {
+        List<PersonModel> output = new()
+        {
+            new() {Id=1, FirstName="The", LastName="Snitch"},
+            new() {Id=1, FirstName="is", LastName="Out"},
+            new() {Id=1, FirstName="Of", LastName="Control"}
+        };
+
+        return output;
+    }
 }
