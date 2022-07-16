@@ -23,10 +23,7 @@ public class Program
     {
         DeleteIfExists(file);
 
-        using (var package = new ExcelPackage(file))
-        {
-            
-        }
+        using var package = new ExcelPackage(file);
     }
 
     private static void DeleteIfExists(FileInfo file)
