@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Drawing;
+using System;
 using System.ComponentModel;
 using OfficeOpenXml;
 using System.IO;
@@ -27,8 +28,15 @@ public class Program
 
         var ws = package.Workbook.Worksheets.Add("MainReport");
         
-        var range = ws.Cells["A1"].LoadFromCollection<PersonModel>(people, true);
+        var range = ws.Cells["A2"].LoadFromCollection<PersonModel>(people, true);
         range.AutoFitColumns();
+
+        // Formatting for the header row
+        ws.Cells["A1"].Value = "Our cool Report";
+        ws.Cells["A1:C1"].Merge = true;
+        ws.Column(1).Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
+        ws.Row(1).Style.Font.Size = 24;
+        ws.Row(1).Style.Font.Color.SetColor(Color.Blue);
 
         await package.SaveAsync();
     }
