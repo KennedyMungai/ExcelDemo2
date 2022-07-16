@@ -15,6 +15,18 @@ public class Program
         var file = new FileInfo(Path.Combine(SpecialFolder.Desktop + "ExcelSucks.xlsx"));
 
         var people = GetSetupData();
+
+        await SaveExcelFile(people, file);
+    }
+
+    private static Task SaveExcelFile(List<PersonModel> people, FileInfo file)
+    {
+        DeleteIfExists(file);
+
+        if(File.Exists(file))
+        {
+            File.Delete(file);
+        }
     }
 
     static List<PersonModel> GetSetupData()
