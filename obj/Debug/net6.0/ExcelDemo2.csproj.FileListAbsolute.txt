@@ -1,0 +1,15 @@
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\bin\Debug\net6.0\ExcelDemo2.exe
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\bin\Debug\net6.0\ExcelDemo2.deps.json
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\bin\Debug\net6.0\ExcelDemo2.runtimeconfig.json
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\bin\Debug\net6.0\ExcelDemo2.dll
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\bin\Debug\net6.0\ExcelDemo2.pdb
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\obj\Debug\net6.0\ExcelDemo2.csproj.AssemblyReference.cache
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\obj\Debug\net6.0\ExcelDemo2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\obj\Debug\net6.0\ExcelDemo2.AssemblyInfoInputs.cache
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\obj\Debug\net6.0\ExcelDemo2.AssemblyInfo.cs
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\obj\Debug\net6.0\ExcelDemo2.csproj.CoreCompileInputs.cache
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\obj\Debug\net6.0\ExcelDemo2.dll
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\obj\Debug\net6.0\refint\ExcelDemo2.dll
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\obj\Debug\net6.0\ExcelDemo2.pdb
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\obj\Debug\net6.0\ExcelDemo2.genruntimeconfig.cache
+C:\Users\HannibalBarca\Documents\C# projects\ExcelDemo2\obj\Debug\net6.0\ref\ExcelDemo2.dll
