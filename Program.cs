@@ -8,11 +8,13 @@ namespace ExcelDemo2;
 
 public class Program
 {
-    public static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
         ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
 
         var file = new FileInfo(Path.Combine(SpecialFolder.Desktop + "ExcelSucks.xlsx"));
+
+        var people = GetSetupData();
     }
 
     static List<PersonModel> GetSetupData()
