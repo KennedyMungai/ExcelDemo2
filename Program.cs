@@ -12,6 +12,6 @@ public class Program
     {
         ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
 
-        var file = new FileInfo(SpecialFolder.Desktop.ToString());
+        var file = new FileInfo(Path.Combine(SpecialFolder.Desktop + "ExcelSucks.xlsx"));
     }
 }
