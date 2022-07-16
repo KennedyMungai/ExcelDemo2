@@ -23,9 +23,9 @@ public class Program
     {
         DeleteIfExists(file);
 
-        if(File.Exists(file))
+        using (var package = new ExcelPackage(file))
         {
-            File.Delete(file);
+            
         }
     }
 
