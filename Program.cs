@@ -29,6 +29,14 @@ public class Program
         }
     }
 
+    private static void DeleteIfExists(FileInfo file)
+    {
+        if(file.Exists)
+        {
+            file.Delete();
+        }
+    }
+
     static List<PersonModel> GetSetupData()
     {
         List<PersonModel> output = new()
